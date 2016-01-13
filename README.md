@@ -3,11 +3,11 @@
 `nhl` is a command line interface for recent and live NHL game scores.
 
 It uses the JSON information hosted on [live.nhle][]. An example of this data
-can be found in [etc/RegularSeasonScoreboardv3.jsonp][].
+can be found [here](etc/RegularSeasonScoreboardv3.jsonp).
 
 ## Compilation / Installation
 
-To compile and install the program / man, use `sudo make`.
+To compile and install the program to , use `sudo make`.
 
 ## Usage
 
