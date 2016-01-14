@@ -2,6 +2,8 @@
 
 `nhl` is a command line interface for recent and live NHL game scores.
 
+![nhl-scores](etc/example.gif)
+
 It uses the JSON information hosted on [live.nhle][]. An example of this data
 can be found [here](etc/RegularSeasonScoreboardv3.jsonp).
 
