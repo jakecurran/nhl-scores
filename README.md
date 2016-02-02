@@ -30,4 +30,9 @@ Should be compatible with *nix systems, but tested using
 
 - Xubuntu 15.10 x64, GCC 5.2
 
+## Todo
+
+- Use [statsapi.web.nhl.com][] for all data
+
 [live.nhle]: http://live.nhle.com/GameData/RegularSeasonScoreboardv3.jsonp
+[statsapi.web.nhl.com]: https://statsapi.web.nhl.com/api/v1/schedule?startDate=2016-01-31&endDate=2016-02-05&expand=schedule.teams,schedule.linescore,schedule.broadcasts,schedule.ticket,schedule.game.content.media.epg&leaderCategories=&site=en_nhl&teamId=
