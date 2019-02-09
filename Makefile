@@ -1,18 +1,24 @@
-default: install
+default: build
 
 CC = gcc
 FLAGS = -ljansson -lcurl
 
-INSTALL_DIR = /usr/local/bin
-
-install:
-	$(CC) -o $(INSTALL_DIR)/nhl nhl_scores.c $(FLAGS)
-
-uninstall:
-	rm -f $(INSTALL_DIR)/nhl
+SRC = src/nhl_scores.c
 
 OBJ_DIR = bin
+OBJ_NAME = nhl
 
-test:
+INSTALL_DIR = /usr/local/bin
+
+build:
 	mkdir -p $(OBJ_DIR)
-	$(CC) -o $(OBJ_DIR)/nhl nhl_scores.c $(FLAGS)
+	$(CC) -o $(OBJ_DIR)/$(OBJ_NAME) $(SRC) $(FLAGS)
+
+clean:
+	rm -rf bin
+
+install:
+	$(CC) -o $(INSTALL_DIR)/$(OBJ_NAME) $(SRC) $(FLAGS)
+
+uninstall:
+	rm -f $(INSTALL_DIR)/$(OBJ_NAME)
