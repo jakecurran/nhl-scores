@@ -14,6 +14,10 @@ build:
 	mkdir -p $(OBJ_DIR)
 	$(CC) -o $(OBJ_DIR)/$(OBJ_NAME) $(SRC) $(FLAGS)
 
+run:
+	if [ ! -f $(OBJ_DIR)/$(OBJ_NAME) ]; then make build; fi;
+	$(OBJ_DIR)/$(OBJ_NAME)
+
 clean:
 	rm -rf bin
 
