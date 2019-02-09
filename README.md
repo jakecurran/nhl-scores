@@ -7,9 +7,9 @@
 It uses the JSON information hosted on [live.nhle][]. An example of this data
 can be found [here](etc/RegularSeasonScoreboardv3.jsonp).
 
-## Compilation / Installation
+## Run
 
-To compile and install the program to , use `sudo make`.
+To compile and run the program use, use `make run`.
 
 ## Usage
 
@@ -23,12 +23,6 @@ To compile and install the program to , use `sudo make`.
 | `-t`, `--team` | Display scores recent/live games of a team specified by its city or team name, and without spaces |
 | `-r`, `--raw`  | Output raw JSON, beautified, from [live.nhle][] source      |
 | `-h`, `--help` | Display command info and usage instructions                 |
-
-## Compatibility
-
-Should be compatible with *nix systems, but tested using
-
-- Xubuntu 15.10 x64, GCC 5.2
 
 ## Todo
 
